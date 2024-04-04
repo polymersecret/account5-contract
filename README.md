@@ -1,20 +1,15 @@
-## 📋 Prerequisites
 
-The repo is **compatible with both Hardhat and Foundry** development environments.
+## Team Members
 
-- Have [git](https://git-scm.com/downloads) installed
-- Have [node](https://nodejs.org) installed (v18+)
-- Have [Foundry](https://book.getfoundry.sh/getting-started/installation) installed (Hardhat will be installed when running `npm install`)
-- Have [just](https://just.systems/man/en/chapter_1.html) installed (recommended but not strictly necessary)
+- @Cathy771 - Developer
 
-You'll need some API keys from third party's:
-- [Optimism Sepolia](https://optimism-sepolia.blockscout.com/account/api-key) and [Base Sepolia](https://base-sepolia.blockscout.com/account/api-key) Blockscout Explorer API keys
-- Have an [Alchemy API key](https://docs.alchemy.com/docs/alchemy-quickstart-guide) for OP and Base Sepolia
 
-Some basic knowledge of all of these tools is also required, although the details are abstracted away for basic usage.
+## Introduction
 
-## 🧰 Install dependencies
+Our project plans to build a bridge application which allows users to bridge   ERC20 tokens between L2s. We choose to deploy a burn and mint for tokens you   first deploy on different chains and whitelist for your bridge.
 
+
+## Steps to reproduce
 To compile your contracts and start testing, make sure that you have all dependencies installed.
 
 From the root directory run:
@@ -53,15 +48,27 @@ npm i
 npm run serve
 ```
 
-## Tx hash
-Optimism tx hash: 0x9effaf67d7f35cbad354c5ce0f25ade9941615914662d055fee65a88bdba0df8
-Base tx hash: 0x9effaf67d7f35cbad354c5ce0f25ade9941615914662d055fee65a88bdba0df8
+## Proof of testnet interaction
 
+After following the steps above you should have interacted with the testnet. You can check this at the [IBC Explorer](https://explorer.ethdenver.testnet.polymer.zone/).
 
-## portAddr
-Op: 0xac3d517d5ed9f0715eA067aA0b437A0aF5E28697
-Base: 0xac3d517d5ed9f0715eA067aA0b437A0aF5E28697
+Here's the data of our application:
 
+- Contract (OP Sepolia) : 0xac3d517d5ed9f0715eA067aA0b437A0aF5E28697
+- Contract (Base Sepolia): 0xac3d517d5ed9f0715eA067aA0b437A0aF5E28697
+- Channel (OP Sepolia): 0xac3d517d5ed9f0715eA067aA0b437A0aF5E28697
+- Channel (Base Sepolia): 0xac3d517d5ed9f0715eA067aA0b437A0aF5E28697
 
+- Proof of Testnet interaction:
+    - [SendTx](https://optimism-sepolia.blockscout.com/tx/0x9effaf67d7f35cbad354c5ce0f25ade9941615914662d055fee65a88bdba0df8)
+    - [RecvTx](https://base-sepolia.blockscout.com/tx/0x9effaf67d7f35cbad354c5ce0f25ade9941615914662d055fee65a88bdba0df8)
+    - [Ack](https://base-sepolia.blockscout.com/tx/0x9effaf67d7f35cbad354c5ce0f25ade9941615914662d055fee65a88bdba0df8)
 
+## What we learned
 
+We learned a lot about IBC while using polymer
+
+## Future Improvements
+
+Get more users, users are important
+Support ERC721 or 1155, I like these NFTs very much
